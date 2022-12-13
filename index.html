@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="stylesheet" href="./estilos/style.css">
     <link rel="stylesheet" href="./estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Login</title>
 </head>
 <body>
@@ -20,7 +21,23 @@
             <div id="form">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente, faça login para acessar sua conta.</p>
-                <form action="login.php" method="post"></form>
+                <br>
+                <form action="login.php" method="post">
+                    <div class="input-material">
+                        <i class="material-icons">person</i>
+                        <input name="email" id="email" type="email" required autocomplete="email" placeholder="Seu email"> 
+                        <label for="email"></label>
+                    </div>
+                    
+                    <div>
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="senha" placeholder="Sua senha"> 
+                         <label for="senha" required=""></label>
+                    </div>
+                    
+                    <input type="submit" value="Entrar">
+                    <a href="#">Esqueci minha senha</a>
+                </form>
             </div>
         </section>
     </main>
